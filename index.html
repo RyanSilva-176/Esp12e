@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/512/3105/3105807.png"
+    />
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <ion-icon id="menu" name="menu-outline"></ion-icon>
+      <div class="profile">
+        <ion-icon id="notifications" name="notifications-outline"></ion-icon>
+        <!-- <img
+          src="
+            https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+          alt="profile-pic"
+        /> -->
+      </div>
+    </header>
+    <body>
+      <!-- Hero -->
+      <section id="hero">
+        <div class="container">
+          <div class="day-info">
+            <ion-icon id="sun-icon" name="sunny-outline"></ion-icon>
+            <span>30°C - Ilha de Itamaracá</span>
+          </div>
+          <div class="date-info">
+            <span>13 Jan 2023</span>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero -->
+      <!-- Banner -->
+      <section class="banner" id="banner">
+        <h1 class="tittle">Atualizações:</h1>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <span> Temperatura </span>
+              <img id="temp-graph" src="images/Graph.svg" alt="" />
+              <div class="dates">
+                <span>Jan</span>
+                <span>Mar</span>
+                <span>May</span>
+                <span>Jul</span>
+                <span>Sep</span>
+                <span>Nov</span>
+                <span>Dec</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div id="now-temp">
+                <div class="temp-value">
+                  <h1>27°C</h1>
+                  <span>Normal</span>
+                </div>
+                <div class="better-temp">
+                  <p>Temperatura recomendada</p>
+                  <span>28°C</span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div> -->
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
+        </div>
+      </section>
+      <!-- End Banner -->
+      <!-- Quick Access -->
+      <section id="quick-access">
+        <h1 class="tittle">Sensores:</h1>
+        <div class="container">
+          <div class="sensor" id="temp-sensor">
+            <div class="sensor-info">
+              <ion-icon
+                class="sensor-icon mg-15"
+                name="thermometer-outline"
+              ></ion-icon>
+              <span class="sensor-name">Temperatura</span>
+            </div>
+            <div class="sensorData">
+              <h1 class="sensor-value" id="temp-value">23</h1>
+              <span class="value-unit">°C</span>
+            </div>
+          </div>
+          <div class="sensor" id="ph-sensor">
+            <div class="sensor-info">
+              <ion-icon
+                class="sensor-icon mg-15"
+                name="water-outline"
+              ></ion-icon>
+              <span class="sensor-name">PH</span>
+            </div>
+            <div class="sensorData">
+              <h1 class="sensor-value" id="ph-value">7</h1>
+              <span class="value-unit">Normal</span>
+            </div>
+          </div>
+          <div class="sensor" id="turb-sensor">
+            <div class="sensor-info">
+              <ion-icon class="sensor-icon" name="pulse-outline"></ion-icon>
+              <span class="sensor-name">Turbidez</span>
+            </div>
+            <div class="sensorData">
+              <h1 class="sensor-value" id="turb-value">0.5</h1>
+              <span class="value-unit">NTU</span>
+            </div>
+          </div>
+          <div class="sensor" id="cond-sensor">
+            <div class="sensor-info">
+              <ion-icon
+                class="sensor-icon mg-15"
+                name="flash-outline"
+              ></ion-icon>
+              <span class="sensor-name">Condutividade</span>
+            </div>
+            <div class="sensorData">
+              <h1 class="sensor-value" id="cond-value">1.000</h1>
+              <span class="value-unit">mg/L</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Quick Access -->
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="container">
+          <ion-icon id="file" name="folder-outline"></ion-icon>
+          <ion-icon id="actions" name="chevron-up-circle-outline"></ion-icon>
+          <ion-icon id="calendar" name="calendar-clear-outline"></ion-icon>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </body>
+    <!-- JS -->
+    <script src="js/app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <!-- Slidder -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
